@@ -31,26 +31,31 @@ export const SUBCATEGORIAS_MELAMINA = [
   {
     slug: "cocinas",
     nombre: "Cocinas",
+    descripcion: "Diseños modernos y funcionales para tu cocina",
     portada: `${SUPABASE_BASE}/muebles-de-melamina/cocinas/cocinas-portada.png`
   },
   {
     slug: "closets",
     nombre: "Closets",
+    descripcion: "Organización perfecta para tu guardarropa",
     portada: `${SUPABASE_BASE}/muebles-de-melamina/closets/closet-portada.png`
   },
   {
     slug: "muebles-entretenimiento",
     nombre: "Muebles de Entretenimiento",
+    descripcion: "Espacios elegantes para tu entretenimiento",
     portada: `${SUPABASE_BASE}/muebles-de-melamina/muebles-de-entretenimiento/mueble-entretenimiento-portada.png`
   },
   {
     slug: "veladores",
     nombre: "Veladores",
+    descripcion: "Muebles complementarios de estilo",
     portada: `${SUPABASE_BASE}/muebles-de-melamina/veladores/veladores-portada.png`
   },
   {
     slug: "muebles-bano",
     nombre: "Muebles de Baño",
+    descripcion: "Soluciones prácticas para tu baño",
     portada: `${SUPABASE_BASE}/muebles-de-melamina/muebles-de-bano/muebles-bano-portada.png`
   }
 ] as const
