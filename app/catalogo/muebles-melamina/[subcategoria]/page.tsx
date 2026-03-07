@@ -50,29 +50,6 @@ export default function SubcategoriaPage() {
           <span className="text-white">{subcategoriaInfo.nombre}</span>
         </nav>
 
-        {/* Portada Image */}
-        {subcategoriaInfo.portada && (
-          <div style={{
-            width: '100%',
-            height: '300px',
-            marginBottom: '2rem',
-            borderRadius: '0.5rem',
-            overflow: 'hidden',
-            backgroundColor: '#f3f4f6'
-          }}>
-            <img
-              src={subcategoriaInfo.portada}
-              alt={subcategoriaInfo.nombre}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                objectPosition: 'center'
-              }}
-            />
-          </div>
-        )}
-
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
