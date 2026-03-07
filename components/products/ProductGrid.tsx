@@ -10,14 +10,28 @@ interface ProductGridProps {
 
 export default function ProductGrid({ productos }: ProductGridProps) {
   return (
-    <div 
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)',
-        gap: '2rem',
-        width: '100%'
-      }}
-    >
+    <>
+      <style>{`
+        @media (min-width: 768px) {
+          .product-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+        @media (min-width: 1024px) {
+          .product-grid {
+            grid-template-columns: repeat(4, 1fr);
+          }
+        }
+      `}</style>
+      <div 
+        className="product-grid"
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: '2rem',
+          width: '100%'
+        }}
+      >
       {productos.map((producto, index) => (
         <motion.div
           key={producto.id}
@@ -99,5 +113,6 @@ export default function ProductGrid({ productos }: ProductGridProps) {
         </motion.div>
       ))}
     </div>
+    </>
   )
 }
