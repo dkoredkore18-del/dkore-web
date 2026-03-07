@@ -37,7 +37,7 @@ export default function MueblesMelaminaPage() {
         <div 
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+            gridTemplateColumns: 'repeat(2, 1fr)',
             gap: '2rem',
             width: '100%'
           }}
@@ -59,7 +59,9 @@ export default function MueblesMelaminaPage() {
                     borderRadius: '0.5rem',
                     overflow: 'hidden',
                     backgroundColor: '#1f2937',
-                    transition: 'transform 0.3s, box-shadow 0.3s'
+                    transition: 'transform 0.3s, box-shadow 0.3s',
+                    position: 'relative',
+                    height: '400px'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.transform = 'translateY(-8px)'
@@ -70,63 +72,73 @@ export default function MueblesMelaminaPage() {
                     e.currentTarget.style.boxShadow = 'none'
                   }}
                 >
-                  {/* Placeholder Image */}
+                  {/* Background Image */}
+                  {sub.portada ? (
+                    <img
+                      src={sub.portada}
+                      alt={sub.nombre}
+                      style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center'
+                      }}
+                    />
+                  ) : (
+                    <div 
+                      style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        backgroundColor: '#374151',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontSize: '4rem'
+                      }}
+                    >
+                      🪑
+                    </div>
+                  )}
+                  
+                  {/* Overlay */}
                   <div 
                     style={{
-                      position: 'relative',
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
                       width: '100%',
-                      paddingBottom: '75%',
-                      backgroundColor: '#374151',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      overflow: 'hidden'
+                      height: '100%',
+                      background: 'linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2))'
                     }}
-                  >
-                    {sub.portada ? (
-                      <img
-                        src={sub.portada}
-                        alt={sub.nombre}
-                        style={{
-                          position: 'absolute',
-                          top: 0,
-                          left: 0,
-                          width: '100%',
-                          height: '100%',
-                          objectFit: 'cover',
-                          objectPosition: 'center'
-                        }}
-                      />
-                    ) : (
-                      <div 
-                        style={{
-                          position: 'absolute',
-                          top: '50%',
-                          left: '50%',
-                          transform: 'translate(-50%, -50%)',
-                          textAlign: 'center',
-                          color: '#9ca3af',
-                          fontSize: '3rem'
-                        }}
-                      >
-                        🪑
-                      </div>
-                    )}
-                  </div>
+                  />
                   
                   {/* Content */}
-                  <div style={{ padding: '1.5rem' }}>
+                  <div 
+                    style={{
+                      position: 'absolute',
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      padding: '2rem',
+                      color: '#fff'
+                    }}
+                  >
                     <h3 
                       style={{
-                        fontSize: '1.5rem',
+                        fontSize: '1.875rem',
                         fontWeight: '600',
-                        color: '#fff',
                         marginBottom: '0.5rem'
                       }}
                     >
                       {sub.nombre}
                     </h3>
-                    <p style={{ color: '#9ca3af', fontSize: '0.875rem' }}>
+                    <p style={{ color: '#d1d5db', fontSize: '0.875rem' }}>
                       Ver productos →
                     </p>
                   </div>
