@@ -4,13 +4,10 @@ export interface Producto {
   slug: string
   descripcion: string
   descripcion_larga?: string
+  imagenes: string[]
   categoria: string
   subcategoria?: string
-  imagenes: string[]
   destacado?: boolean
-  orden?: number
-  created_at?: string
-  updated_at?: string
   aspectRatio?: number
   imageScale?: number
 }

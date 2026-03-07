@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { productos as productosData } from '@/data/productos'
-import type { Producto } from '@/data/productos'
+import type { Producto } from '@/types'
 
 /**
  * Hook para obtener todos los productos
