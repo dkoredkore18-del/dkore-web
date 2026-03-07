@@ -7,10 +7,10 @@ export interface Producto {
   categoria: string
   subcategoria?: string
   imagenes: string[]
-  destacado: boolean
-  orden: number
-  created_at: string
-  updated_at: string
+  destacado?: boolean
+  orden?: number
+  created_at?: string
+  updated_at?: string
   aspectRatio?: number
   imageScale?: number
 }
