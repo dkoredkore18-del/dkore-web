@@ -11,7 +11,7 @@ interface ProductGridProps {
 export default function ProductGrid({ productos }: ProductGridProps) {
   return (
     <div 
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full"
+      className="product-grid-responsive"
     >
       {productos.map((producto, index) => (
         <motion.div

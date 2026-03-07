@@ -23,10 +23,7 @@ export default function CatalogoPage() {
         </motion.div>
 
         <div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mb-16"
-          style={{
-            marginBottom: '4rem'
-          }}
+          className="categoria-grid-responsive"
         >
           {CATEGORIAS.map((categoria, index) => (
             <CategoryCard

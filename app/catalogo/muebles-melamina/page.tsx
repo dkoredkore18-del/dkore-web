@@ -35,7 +35,7 @@ export default function MueblesMelaminaPage() {
 
         {/* Subcategorías Grid */}
         <div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full"
+          className="subcategoria-grid-responsive"
         >
           {SUBCATEGORIAS_MELAMINA.map((sub, index) => (
             <motion.div

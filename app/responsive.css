@@ -1,0 +1,48 @@
+/* Responsive Grid for Products */
+.product-grid-responsive {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .product-grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid-responsive {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Responsive Grid for Subcategories */
+.subcategoria-grid-responsive {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .subcategoria-grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive Grid for Categories */
+.categoria-grid-responsive {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .categoria-grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
