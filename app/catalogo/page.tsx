@@ -23,11 +23,8 @@ export default function CatalogoPage() {
         </motion.div>
 
         <div 
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mb-16"
           style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
-            gap: '2rem',
-            width: '100%',
             marginBottom: '4rem'
           }}
         >

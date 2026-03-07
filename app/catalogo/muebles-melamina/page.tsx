@@ -7,20 +7,7 @@ import { SUBCATEGORIAS_MELAMINA } from "@/lib/constants"
 
 export default function MueblesMelaminaPage() {
   return (
-    <>
-      <style>{`
-        @media (max-width: 767px) {
-          .subcategoria-grid {
-            grid-template-columns: repeat(1, 1fr);
-          }
-        }
-        @media (min-width: 768px) {
-          .subcategoria-grid {
-            grid-template-columns: repeat(2, 1fr);
-          }
-        }
-      `}</style>
-      <div className="min-h-screen bg-black pt-32 pb-24 px-6">
+    <div className="min-h-screen bg-black pt-32 pb-24 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Breadcrumbs */}
         <nav className="mb-8 text-sm text-gray-400">
@@ -48,13 +35,7 @@ export default function MueblesMelaminaPage() {
 
         {/* Subcategorías Grid */}
         <div 
-          className="subcategoria-grid"
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
-            gap: '2rem',
-            width: '100%'
-          }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full"
         >
           {SUBCATEGORIAS_MELAMINA.map((sub, index) => (
             <motion.div
@@ -162,6 +143,6 @@ export default function MueblesMelaminaPage() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   )
 }
