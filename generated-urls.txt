@@ -1,0 +1,149 @@
+// URLs generadas automáticamente
+
+// Marmol-LCP-Pierre1
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Marmol-LCP-Pierre1/Marmol-LCP-Pierre1.png",
+],
+
+// Marmol-Labradorite-Royal-Blue-Velvet1
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Marmol-Labradorite-Royal-Blue-Velvet1/Marmol-Labradorite-Royal-Blue-Velvet1.png",
+],
+
+// Marmol-Lucca1
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Marmol-Lucca1/Marmol-Lucca1.png",
+],
+
+// Porcelanato-Cemento-Brera-Fresh1
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Cemento-Brera-Fresh1/Porcelanato-Cemento-Brera-Fresh1.png",
+],
+
+// Porcelanato-Cemento-Cosmopolita-Ivory1
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Cemento-Cosmopolita-Ivory1/Porcelanato-Cemento-Cosmopolita-Ivory1.png",
+],
+
+// Porcelanato-Marmol-Belvedere-Black1
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Belvedere-Black1/Porcelanato-Marmol-Belvedere-Black1.png",
+],
+
+// Porcelanato-Marmol-Calacata-White1
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Calacata-White1/Porcelanato-Marmol-Calacata-White1.png",
+],
+
+// Porcelanato-Marmol-Estatuario-Extra1
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Estatuario-Extra1/Porcelanato-Marmol-Estatuario-Extra1.png",
+],
+
+// Porcelanato-Marmol-Onice-Black1
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Onice-Black1/Porcelanato-Marmol-Onice-Black1.png",
+],
+
+// cristal mini
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/cristal%20mini/cristal-mini-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/cristal%20mini/cristal-mini-champan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/cristal%20mini/cristal-mini-negro.png",
+],
+
+// cristal plus
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/cristal%20plus/cristal-plus-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/cristal%20plus/cristal-plus-champan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/cristal%20plus/cristal-plus-negro.png",
+],
+
+// diamante
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/diamante/diamante-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/diamante/diamante-champan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/diamante/diamante-negro.png",
+],
+
+// geometrica
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/geometrica/geometrica-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/geometrica/geometrica-champan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/geometrica/geometrica-negro.png",
+],
+
+// lineal normal
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/lineal%20normal/lineal-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/lineal%20normal/lineal-champan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/lineal%20normal/lineal-negra.png",
+],
+
+// lineal plus
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/lineal%20plus/lineal-plus-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/lineal%20plus/lineal-plus-champan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/lineal%20plus/lineal-plus-negro.png",
+],
+
+// nique mini
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/nique%20mini/nique-mini-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/nique%20mini/nique-mini-chanpan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/nique%20mini/nique-mini-negro.png",
+],
+
+// nique normal
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/nique%20normal/nique-normal-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/nique%20normal/nique-normal-champan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/nique%20normal/nique-normal-negro.png",
+],
+
+// nique plus
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/nique%20plus/nique-plus-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/nique%20plus/nique-plus-champane.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/nique%20plus/nique-plus-negro.png",
+],
+
+// timba mini
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini-champan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini-negro.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini1.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini2.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini3.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini4.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini5.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini6.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini7.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini8.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20mini/timba-mini9.png",
+],
+
+// timba plus
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20plus/timba-plus-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20plus/timba-plus-champan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/timba%20plus/timba-plus-negro.png",
+],
+
+// tinba normal
+imagenes: [
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal-blanco.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal-champan.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal-negra.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal1.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal2.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal3.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal4.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal5.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal6.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal7.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal8.png",
+  "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/macetas/tinba%20normal/timba-normal9.png",
+],
+
