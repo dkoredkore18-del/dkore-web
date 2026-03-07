@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 
 export async function POST(request: NextRequest) {
   try {
@@ -16,6 +16,14 @@ export async function POST(request: NextRequest) {
     }
 
     // Enviar email al admin
+    if (!resend) {
+      console.warn('Resend API key no configurada. Email no será enviado.')
+      return NextResponse.json(
+        { success: true, message: 'Mensaje recibido (email no configurado)' },
+        { status: 200 }
+      )
+    }
+
     const adminEmail = await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: 'dkore.dkore.18@gmail.com',
