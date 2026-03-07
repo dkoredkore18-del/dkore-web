@@ -1,5 +1,5 @@
 import { type NextRequest } from 'next/server'
-import { updateSession } from '@/lib/supabase/middleware'
+// import { updateSession } from '@/lib/supabase/middleware'
 
 /**
  * Middleware de Next.js que se ejecuta en cada request
@@ -10,7 +10,9 @@ import { updateSession } from '@/lib/supabase/middleware'
  * - Refresco de sesiones
  */
 export async function middleware(request: NextRequest) {
-  return await updateSession(request)
+  // Middleware deshabilitado temporalmente
+  return
+  // return await updateSession(request)
 }
 
 export const config = {
