@@ -21,9 +21,10 @@ export const productos: Producto[] = [
     nombre: "Porcelanato Mármol Onice Black",
     slug: "onice-black",
     descripcion: "Acabado oscuro de alto impacto con vetas intensas tipo ónice.",
-    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Onice Black. Estructura resistente y duradera, ideal para espacios modernos que requieren elegancia y sofisticación. Superficie no porosa, fácil de limpiar y mantener. Dimensiones personalizables según necesidades del proyecto.",
+    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Onice Black. Placa de 12mm de grosor. Estructura resistente y duradera, ideal para espacios modernos que requieren elegancia y sofisticación. Superficie no porosa, fácil de limpiar y mantener. Dimensiones personalizables según necesidades del proyecto.",
     imagenes: [
       "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Onice-Black1/Porcelanato-Marmol-Onice-Black1.png",
+      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Onice-Black1/Porcelanato-Marmol-Onice-Black2.png"
     ],
     categoria: "mesas-piedra-sinterizada",
         aspectRatio: 1.3067,
@@ -34,9 +35,10 @@ export const productos: Producto[] = [
     nombre: "Porcelanato Mármol Estatuario Extra",
     slug: "estatuario-extra",
     descripcion: "Elegancia clásica en blanco con vetas grises sofisticadas.",
-    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Estatuario Extra. Diseño clásico con vetas grises que aportan carácter y distinción. Estructura robusta y resistente al desgaste. Perfecta para ambientes de lujo y espacios contemporáneos.",
+    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Estatuario Extra. Placa de 12mm de grosor. Diseño clásico con vetas grises que aportan carácter y distinción. Estructura robusta y resistente al desgaste. Perfecta para ambientes de lujo y espacios contemporáneos.",
     imagenes: [
       "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Estatuario-Extra1/Porcelanato-Marmol-Estatuario-Extra1.png",
+      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Estatuario-Extra1/Porcelanato-Marmol-Estatuario-Extra2.png"
     ],
     categoria: "mesas-piedra-sinterizada",
         aspectRatio: 1.3067,
@@ -47,9 +49,10 @@ export const productos: Producto[] = [
     nombre: "Porcelanato Mármol Calacata White",
     slug: "calacata-white",
     descripcion: "Diseño luminoso con vetas amplias y presencia moderna.",
-    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Calacata White. Superficie luminosa que amplía visualmente los espacios. Vetas amplias y definidas que crean un efecto visual impactante. Ideal para proyectos residenciales y comerciales de alto nivel.",
+    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Calacata White. Placa de 12mm de grosor. Superficie luminosa que amplía visualmente los espacios. Vetas amplias y definidas que crean un efecto visual impactante. Ideal para proyectos residenciales y comerciales de alto nivel.",
     imagenes: [
       "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Calacata-White1/Porcelanato-Marmol-Calacata-White1.png",
+      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Calacata-White1/Porcelanato-Marmol-Calacata-White2.jpg"
     ],
     categoria: "mesas-piedra-sinterizada",
         aspectRatio: 1.3067,
@@ -60,9 +63,10 @@ export const productos: Producto[] = [
     nombre: "Porcelanato Mármol Belvedere Black",
     slug: "belvedere-black",
     descripcion: "Fondo negro profundo con vetas doradas de lujo.",
-    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Belvedere Black. Fondo negro profundo con vetas doradas que aportan un toque de lujo y exclusividad. Estructura de máxima resistencia. Perfecta para espacios de diseño contemporáneo y sofisticado.",
+    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Belvedere Black. Placa de 12mm de grosor. Fondo negro profundo con vetas doradas que aportan un toque de lujo y exclusividad. Estructura de máxima resistencia. Perfecta para espacios de diseño contemporáneo y sofisticado.",
     imagenes: [
       "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Belvedere-Black1/Porcelanato-Marmol-Belvedere-Black1.png",
+      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Marmol-Belvedere-Black1/Porcelanato-Marmol-Belvedere-Black2.png"
     ],
     categoria: "mesas-piedra-sinterizada",
         aspectRatio: 1.3067,
@@ -73,9 +77,10 @@ export const productos: Producto[] = [
     nombre: "Porcelanato Cemento Cosmopolita Ivory",
     slug: "cosmopolita-ivory",
     descripcion: "Estética urbana con textura cemento en tono marfil.",
-    descripcion_larga: "Mesa en piedra sinterizada con acabado cemento Cosmopolita Ivory. Estética urbana y contemporánea con textura que simula cemento pulido. Tono marfil cálido que se adapta a diversos estilos de decoración. Superficie resistente y de bajo mantenimiento.",
+    descripcion_larga: "Mesa en piedra sinterizada con acabado cemento Cosmopolita Ivory. Placa de 12mm de grosor. Estética urbana y contemporánea con textura que simula cemento pulido. Tono marfil cálido que se adapta a diversos estilos de decoración. Superficie resistente y de bajo mantenimiento.",
     imagenes: [
       "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Cemento-Cosmopolita-Ivory1/Porcelanato-Cemento-Cosmopolita-Ivory1.png",
+      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Cemento-Cosmopolita-Ivory1/Porcelanato-Cemento-Cosmopolita-Ivory2.png"
     ],
     categoria: "mesas-piedra-sinterizada",
         aspectRatio: 1.3067,
@@ -86,9 +91,10 @@ export const productos: Producto[] = [
     nombre: "Porcelanato Cemento Brera Fresh",
     slug: "brera-fresh",
     descripcion: "Estilo industrial moderno con acabado fresco y limpio.",
-    descripcion_larga: "Mesa en piedra sinterizada con acabado cemento Brera Fresh. Estilo industrial moderno con acabado fresco y limpio. Textura que evoca el cemento pulido contemporáneo. Ideal para espacios loft, oficinas modernas y ambientes de diseño industrial.",
+    descripcion_larga: "Mesa en piedra sinterizada con acabado cemento Brera Fresh. Placa de 12mm de grosor. Estilo industrial moderno con acabado fresco y limpio. Textura que evoca el cemento pulido contemporáneo. Ideal para espacios loft, oficinas modernas y ambientes de diseño industrial.",
     imagenes: [
       "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Cemento-Brera-Fresh1/Porcelanato-Cemento-Brera-Fresh1.png",
+      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Porcelanato-Cemento-Brera-Fresh1/Porcelanato-Cemento-Brera-Fresh2.jpg"
     ],
     categoria: "mesas-piedra-sinterizada",
         aspectRatio: 1.3067,
@@ -99,39 +105,42 @@ export const productos: Producto[] = [
     nombre: "Mármol Lucca",
     slug: "lucca",
     descripcion: "Tonalidades suaves y elegancia natural atemporal.",
-    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Lucca. Tonalidades suaves que transmiten elegancia y calidez. Diseño atemporal que se adapta a cualquier proyecto. Estructura duradera y resistente a cambios de temperatura.",
+    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Lucca. Placa de 12mm de grosor. Tonalidades suaves que transmiten elegancia y calidez. Diseño atemporal que se adapta a cualquier proyecto. Estructura duradera y resistente a cambios de temperatura.",
     imagenes: [
       "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Marmol-Lucca1/Marmol-Lucca1.png",
+      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Marmol-Lucca1/Marmol-Lucca2.png"
     ],
     categoria: "mesas-piedra-sinterizada",
     aspectRatio: 1.3067,
-    imageScale: 1.48
+    imageScale: 1.5
   },
   {
     id: 8,
-    nombre: "Mármol LCP Pierre",
-    slug: "lcp-pierre",
-    descripcion: "Textura pétrea con carácter contemporáneo.",
-    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol LCP Pierre. Textura pétrea que aporta carácter y personalidad. Diseño contemporáneo versátil. Superficie no porosa que garantiza higiene y facilidad de limpieza.",
+    nombre: "Porcelanato-Mármol MARVEL DIVA Galaxy",
+    slug: "marvel-diva-galaxy",
+    descripcion: "Diseño galáctico con tonalidades profundas y sofisticadas.",
+    descripcion_larga: "Mesa en piedra sinterizada con acabado porcelanato-mármol MARVEL DIVA Galaxy. Diseño galáctico con tonalidades profundas que aportan sofisticación y elegancia. Placa de 12mm de grosor. Superficie no porosa que garantiza higiene y facilidad de limpieza.",
     imagenes: [
-      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Marmol-LCP-Pierre1/Marmol-LCP-Pierre1.png",
+      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Marmol-marvel-diva-galaxy/Marmol-marvel-diva-galaxy1.png",
+      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Marmol-marvel-diva-galaxy/Marmol-marvel-diva-galaxy2.png"
     ],
     categoria: "mesas-piedra-sinterizada",
     aspectRatio: 1.3067,
-    imageScale: 1.93
+    imageScale: 1.4
   },
   {
     id: 9,
     nombre: "Mármol Labradorite Royal Blue Velvet",
     slug: "labradorite-royal-blue-velvet",
     descripcion: "Superficie exótica con reflejos azules intensos y profundidad visual.",
-    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Labradorite Royal Blue Velvet. Superficie exótica con reflejos azules intensos que crean profundidad visual. Diseño exclusivo y sofisticado. Ideal para proyectos de lujo y espacios que requieren impacto visual.",
+    descripcion_larga: "Mesa en piedra sinterizada con acabado mármol Labradorite Royal Blue Velvet. Placa de 12mm de grosor. Superficie exótica con reflejos azules intensos que crean profundidad visual. Diseño exclusivo y sofisticado. Ideal para proyectos de lujo y espacios que requieren impacto visual.",
     imagenes: [
       "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Marmol-Labradorite-Royal-Blue-Velvet1/Marmol-Labradorite-Royal-Blue-Velvet1.png",
+      "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/mesas-en-piedra-sinterizada/Marmol-Labradorite-Royal-Blue-Velvet1/Marmol-Labradorite-Royal-Blue-Velvet2.png"
     ],
     categoria: "mesas-piedra-sinterizada",
     aspectRatio: 1.3067,
-    imageScale: 1.58
+    imageScale: 1.6
   },
 
   /* MACETAS FIBRA DE VIDRIO */
