@@ -71,12 +71,12 @@ export default function ProductGrid({ productos }: ProductGridProps) {
                 style={{
                   fontSize: '1.125rem',
                   fontWeight: '600',
-                  color: '#1f2937',
+                  color: 'white',
                   marginBottom: '0.25rem',
                   transition: 'color 0.3s'
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.color = '#059669'}
-                onMouseLeave={(e) => e.currentTarget.style.color = '#1f2937'}
+                onMouseEnter={(e) => e.currentTarget.style.color = '#e5e7eb'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'white'}
               >
                 {producto.nombre}
               </h3>
