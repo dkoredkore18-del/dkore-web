@@ -46,50 +46,44 @@ export default function ProductGallery({ imagenes, nombre }: Props) {
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'row', gap: '24px' }}>
-
-      {/* Miniaturas verticales */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', minWidth: '100px' }}>
-        {imagenes.map((img, index) => (
-          <div
-            key={index}
-            onClick={() => handleThumbnailClick(index)}
-            style={{
-              cursor: 'pointer',
-              border: imagenActiva === index ? '2px solid black' : '2px solid #d1d5db',
-              borderRadius: '8px',
-              overflow: 'hidden',
-              transition: 'all 0.2s',
-              transform: imagenActiva === index ? 'scale(1.1)' : 'scale(1)',
-              width: '80px',
-              height: '80px'
-            }}
-          >
-            <img
-              src={img}
-              alt={`${nombre} - ${index}`}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'contain'
-              }}
-            />
-          </div>
-        ))}
-      </div>
+    <div style={{ 
+      display: 'flex', 
+      flexDirection: 'column',
+      gap: '24px',
+      '@media (min-width: 768px)': {
+        flexDirection: 'row'
+      }
+    }}>
 
       {/* Contenedor principal con flechas */}
       <div 
-        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}
+        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, order: -1 }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
 
         {/* Contenedor de imagen con flechas */}
-        <div style={{ position: 'relative', width: '100%', maxWidth: '600px', height: '600px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ 
+          position: 'relative', 
+          width: '100%', 
+          maxWidth: '600px', 
+          aspectRatio: '1',
+          display: 'flex', 
+          alignItems: 'center', 
+          justifyContent: 'center'
+        }}>
           
           {/* Imagen principal */}
-          <div style={{ width: '100%', height: '100%', border: '1px solid #374151', borderRadius: '12px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ 
+            width: '100%', 
+            height: '100%', 
+            border: '1px solid #374151', 
+            borderRadius: '12px', 
+            overflow: 'hidden', 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center' 
+          }}>
             <img
               src={imagenes[imagenActiva]}
               alt={nombre}
@@ -171,6 +165,48 @@ export default function ProductGallery({ imagenes, nombre }: Props) {
           </div>
         )}
 
+      </div>
+
+      {/* Miniaturas - horizontales en móvil, verticales en desktop */}
+      <div style={{ 
+        display: 'flex', 
+        flexDirection: 'row',
+        gap: '16px', 
+        overflowX: 'auto',
+        paddingBottom: '8px',
+        '@media (min-width: 768px)': {
+          flexDirection: 'column',
+          overflowX: 'visible',
+          minWidth: '100px'
+        }
+      }}>
+        {imagenes.map((img, index) => (
+          <div
+            key={index}
+            onClick={() => handleThumbnailClick(index)}
+            style={{
+              cursor: 'pointer',
+              border: imagenActiva === index ? '2px solid black' : '2px solid #d1d5db',
+              borderRadius: '8px',
+              overflow: 'hidden',
+              transition: 'all 0.2s',
+              transform: imagenActiva === index ? 'scale(1.1)' : 'scale(1)',
+              width: '80px',
+              height: '80px',
+              flexShrink: 0
+            }}
+          >
+            <img
+              src={img}
+              alt={`${nombre} - ${index}`}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain'
+              }}
+            />
+          </div>
+        ))}
       </div>
 
     </div>
