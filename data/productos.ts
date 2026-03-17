@@ -489,7 +489,7 @@ export const productos: Producto[] = [
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
-    imageScale: 1.15
+    imageScale: 1.2
   },
   { 
     id: 32, 
@@ -504,7 +504,7 @@ export const productos: Producto[] = [
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
-    imageScale: 1.15
+    imageScale: 1.2
   },
   { 
     id: 33, 
