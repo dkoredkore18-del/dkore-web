@@ -52,6 +52,8 @@
   flex-direction: column;
   gap: 24px;
   width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .gallery-main-wrapper {
@@ -139,19 +141,43 @@
   flex-direction: row;
   gap: 12px;
   overflow-x: auto;
+  overflow-y: hidden;
   padding-bottom: 8px;
   scroll-behavior: smooth;
   width: 100%;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media (min-width: 768px) {
   .gallery-thumbnails {
     flex-direction: row;
     overflow-x: auto;
+    overflow-y: hidden;
     gap: 16px;
     width: 100%;
+    max-width: 100%;
     padding-bottom: 12px;
+    -webkit-overflow-scrolling: touch;
   }
+}
+
+/* Hide scrollbar but keep functionality */
+.gallery-thumbnails::-webkit-scrollbar {
+  height: 6px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 3px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
 }
 
 .gallery-thumbnail {
