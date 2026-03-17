@@ -58,7 +58,7 @@
 .gallery-main-wrapper {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,7 +66,7 @@
 
 @media (min-width: 768px) {
   .gallery-main-wrapper {
-    height: 500px;
+    height: 400px;
   }
 }
 
@@ -148,6 +148,7 @@
   height: 100px;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
+  /* Mostrar solo 6 miniaturas: 6 * 70px + 5 * 10px = 470px */
 }
 
 @media (min-width: 768px) {
@@ -162,6 +163,7 @@
     padding-bottom: 12px;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
+    /* Mostrar solo 6 miniaturas: 6 * 80px + 5 * 12px = 540px */
   }
 }
 
