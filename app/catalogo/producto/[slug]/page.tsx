@@ -87,13 +87,16 @@ export default function ProductoPage() {
           <span style={{ color: 'white' }}>{producto.nombre}</span>
         </nav>
 
-        {/* Layout de 2 Columnas */}
+        {/* Layout de 2 Columnas en Desktop, 1 en Móvil */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: '1.5fr 1fr',
+          gridTemplateColumns: '1fr',
           gap: '64px',
           alignItems: 'start',
-          marginBottom: '64px'
+          marginBottom: '64px',
+          '@media (min-width: 768px)': {
+            gridTemplateColumns: '1.5fr 1fr'
+          }
         }}>
           {/* COLUMNA IZQUIERDA - GALERÍA (60%) */}
           <motion.div
