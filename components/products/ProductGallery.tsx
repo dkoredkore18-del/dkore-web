@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import "@/app/product-responsive.css"
+import "@/app/styles/responsive-system.css"
 
 interface Props {
   imagenes: string[]
@@ -12,7 +12,6 @@ export default function ProductGallery({ imagenes, nombre }: Props) {
   const [imagenActiva, setImagenActiva] = useState(0)
   const [autoPlay, setAutoPlay] = useState(true)
 
-  // Auto-rotación cada 5 segundos
   useEffect(() => {
     if (!autoPlay || imagenes.length <= 1) return
 
@@ -48,142 +47,61 @@ export default function ProductGallery({ imagenes, nombre }: Props) {
 
   return (
     <div className="gallery-container">
-
-      {/* Contenedor principal con flechas */}
       <div 
-        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}
+        className="flex-column"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-
-        {/* Contenedor de imagen con flechas */}
-        <div className="gallery-main">
-          
-          {/* Imagen principal */}
-          <div style={{ 
-            width: '100%', 
-            height: '100%', 
-            border: '1px solid #374151', 
-            borderRadius: '12px', 
-            overflow: 'hidden', 
-            display: 'flex', 
-            alignItems: 'center', 
-            justifyContent: 'center' 
-          }}>
+        <div className="gallery-main-wrapper">
+          <div className="gallery-main-image">
             <img
               src={imagenes[imagenActiva]}
               alt={nombre}
-              style={{
-                maxWidth: '100%',
-                maxHeight: '100%',
-                objectFit: 'contain',
-                display: 'block',
-                transition: 'opacity 0.3s ease'
-              }}
             />
           </div>
 
-          {/* Flecha Izquierda */}
           {imagenes.length > 1 && (
             <button
               onClick={handlePrevious}
-              style={{
-                position: 'absolute',
-                left: '16px',
-                top: '50%',
-                transform: 'translateY(-50%)',
-                background: 'rgba(0, 0, 0, 0.5)',
-                border: 'none',
-                color: 'white',
-                width: '40px',
-                height: '40px',
-                borderRadius: '50%',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '20px',
-                transition: 'background 0.3s',
-                zIndex: 10
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(0, 0, 0, 0.8)'}
-              onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(0, 0, 0, 0.5)'}
+              className="gallery-nav-button prev"
+              aria-label="Previous image"
             >
               ←
             </button>
           )}
 
-          {/* Flecha Derecha */}
           {imagenes.length > 1 && (
             <button
               onClick={handleNext}
-              style={{
-                position: 'absolute',
-                right: '16px',
-                top: '50%',
-                transform: 'translateY(-50%)',
-                background: 'rgba(0, 0, 0, 0.5)',
-                border: 'none',
-                color: 'white',
-                width: '40px',
-                height: '40px',
-                borderRadius: '50%',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '20px',
-                transition: 'background 0.3s',
-                zIndex: 10
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(0, 0, 0, 0.8)'}
-              onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(0, 0, 0, 0.5)'}
+              className="gallery-nav-button next"
+              aria-label="Next image"
             >
               →
             </button>
           )}
         </div>
 
-        {/* Indicador de progreso */}
         {imagenes.length > 1 && (
-          <div style={{ marginTop: '16px', textAlign: 'center', fontSize: '14px', color: '#6b7280' }}>
+          <div className="gallery-progress">
             {imagenActiva + 1} / {imagenes.length}
           </div>
         )}
-
       </div>
 
-      {/* Miniaturas - ocultas en móvil, verticales en desktop */}
       <div className="gallery-thumbnails">
         {imagenes.map((img, index) => (
           <div
             key={index}
+            className={`gallery-thumbnail ${imagenActiva === index ? 'active' : ''}`}
             onClick={() => handleThumbnailClick(index)}
-            style={{
-              cursor: 'pointer',
-              border: imagenActiva === index ? '2px solid black' : '2px solid #d1d5db',
-              borderRadius: '8px',
-              overflow: 'hidden',
-              transition: 'all 0.2s',
-              transform: imagenActiva === index ? 'scale(1.1)' : 'scale(1)',
-              width: '80px',
-              height: '80px',
-              flexShrink: 0
-            }}
           >
             <img
               src={img}
               alt={`${nombre} - ${index}`}
-              style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'contain'
-              }}
             />
           </div>
         ))}
       </div>
-
     </div>
   )
 }

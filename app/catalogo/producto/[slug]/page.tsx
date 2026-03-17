@@ -7,7 +7,7 @@ import ProductGallery from "@/components/products/ProductGallery"
 import Loading from "@/components/ui/Loading"
 import { useProductBySlug } from "@/hooks/useProducts"
 import { CONTACTO } from "@/lib/constants"
-import "./product-responsive.css"
+import "@/app/styles/responsive-system.css"
 
 export default function ProductoPage() {
   const params = useParams()
@@ -17,7 +17,7 @@ export default function ProductoPage() {
 
   if (loading) {
     return (
-      <div style={{ minHeight: '100vh', backgroundColor: 'black', paddingTop: '96px' }}>
+      <div className="product-page-container">
         <Loading />
       </div>
     )
@@ -25,24 +25,16 @@ export default function ProductoPage() {
 
   if (error || !producto) {
     return (
-      <div style={{ minHeight: '100vh', backgroundColor: 'black', paddingTop: '96px', paddingLeft: '24px', paddingRight: '24px' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto', textAlign: 'center' }}>
-          <h1 style={{ fontSize: '2.25rem', fontWeight: 'bold', color: 'white', marginBottom: '16px' }}>
+      <div className="product-page-container">
+        <div className="product-page-wrapper" style={{ textAlign: 'center' }}>
+          <h1 className="product-title">
             Producto no encontrado
           </h1>
           <p style={{ color: '#d1d5db', marginBottom: '32px' }}>
             {error || "El producto que buscas no existe"}
           </p>
           <Link href="/catalogo">
-            <button style={{
-              backgroundColor: 'white',
-              color: 'black',
-              padding: '12px 32px',
-              fontWeight: 'bold',
-              border: 'none',
-              cursor: 'pointer',
-              fontSize: '1rem'
-            }}>
+            <button className="product-action-button">
               Volver al catálogo
             </button>
           </Link>
@@ -55,42 +47,30 @@ export default function ProductoPage() {
   const whatsappUrl = `${CONTACTO.whatsappUrl}?text=${encodeURIComponent(whatsappMessage)}`
 
   return (
-    <main style={{
-      backgroundColor: 'black',
-      color: 'white',
-      minHeight: '100vh',
-      paddingTop: '96px',
-      paddingBottom: '96px',
-      paddingLeft: '24px',
-      paddingRight: '24px'
-    }}>
-      <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+    <main className="product-page-container">
+      <div className="product-page-wrapper">
         {/* Breadcrumbs */}
-        <nav style={{ marginBottom: '32px', fontSize: '0.875rem', color: '#9ca3af' }}>
-          <Link href="/" style={{ color: '#9ca3af', textDecoration: 'none' }}>
-            <span style={{ cursor: 'pointer', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = '#9ca3af'}>
-              Inicio
-            </span>
+        <nav className="breadcrumbs">
+          <Link href="/">
+            <span>Inicio</span>
           </Link>
-          <span style={{ margin: '0 8px' }}>/</span>
-          <Link href="/catalogo" style={{ color: '#9ca3af', textDecoration: 'none' }}>
-            <span style={{ cursor: 'pointer', transition: 'color 0.3s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = '#9ca3af'}>
-              Catálogo
-            </span>
+          <span>/</span>
+          <Link href="/catalogo">
+            <span>Catálogo</span>
           </Link>
-          <span style={{ margin: '0 8px' }}>/</span>
-          <Link href={`/catalogo/${producto.categoria}`} style={{ color: '#9ca3af', textDecoration: 'none' }}>
-            <span style={{ cursor: 'pointer', transition: 'color 0.3s', textTransform: 'capitalize' }} onMouseEnter={(e) => e.currentTarget.style.color = 'white'} onMouseLeave={(e) => e.currentTarget.style.color = '#9ca3af'}>
+          <span>/</span>
+          <Link href={`/catalogo/${producto.categoria}`}>
+            <span style={{ textTransform: 'capitalize' }}>
               {producto.categoria.replace(/-/g, " ")}
             </span>
           </Link>
-          <span style={{ margin: '0 8px' }}>/</span>
-          <span style={{ color: 'white' }}>{producto.nombre}</span>
+          <span>/</span>
+          <span className="current">{producto.nombre}</span>
         </nav>
 
         {/* Layout de 2 Columnas en Desktop, 1 en Móvil */}
         <div className="product-layout">
-          {/* COLUMNA IZQUIERDA - GALERÍA (60%) */}
+          {/* COLUMNA IZQUIERDA - GALERÍA */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -102,97 +82,54 @@ export default function ProductoPage() {
             />
           </motion.div>
 
-          {/* COLUMNA DERECHA - INFORMACIÓN (40%) */}
+          {/* COLUMNA DERECHA - INFORMACIÓN */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '24px'
-            }}
+            className="product-info"
           >
             {/* Nombre del Producto */}
             <div>
-              <h1 style={{
-                fontSize: 'clamp(1.875rem, 5vw, 2.5rem)',
-                fontWeight: 'bold',
-                color: 'white',
-                marginBottom: '8px',
-                lineHeight: '1.2'
-              }}>
+              <h1 className="product-title">
                 {producto.nombre}
               </h1>
             </div>
 
             {/* Categoría */}
-            <div style={{
-              fontSize: '0.875rem',
-              color: '#d1d5db',
-              textTransform: 'uppercase',
-              letterSpacing: '0.05em',
-              marginBottom: '8px'
-            }}>
+            <div className="product-category">
               {producto.categoria.replace(/-/g, " ")}
               {producto.subcategoria && ` / ${producto.subcategoria.replace(/-/g, " ")}`}
             </div>
 
             {/* Descripción Corta */}
-            <p style={{
-              fontSize: '1rem',
-              color: '#e5e7eb',
-              lineHeight: '1.6',
-              marginBottom: '16px'
-            }}>
+            <p className="product-description-short">
               {producto.descripcion}
             </p>
 
             {/* Descripción Larga */}
             {producto.descripcion_larga && (
-              <div style={{ marginBottom: '24px' }}>
-                <p style={{
-                  fontSize: '0.95rem',
-                  color: '#d1d5db',
-                  lineHeight: '1.6'
-                }}>
+              <div className="product-description-long">
+                <p>
                   {producto.descripcion_larga}
                 </p>
               </div>
             )}
 
             {/* Especificaciones */}
-            <div style={{
-              borderTop: '1px solid #374151',
-              paddingTop: '24px',
-              marginBottom: '24px'
-            }}>
-              <h3 style={{
-                fontSize: '1.125rem',
-                fontWeight: 'bold',
-                color: 'white',
-                marginBottom: '16px'
-              }}>
-                Especificaciones
-              </h3>
-              <ul style={{
-                listStyle: 'none',
-                padding: 0,
-                margin: 0,
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '8px'
-              }}>
-                <li style={{ color: '#d1d5db', fontSize: '0.95rem' }}>
+            <div className="product-specs">
+              <h3>Especificaciones</h3>
+              <ul>
+                <li>
                   • <strong>Categoría:</strong> {producto.categoria.replace(/-/g, " ")}
                 </li>
                 {producto.subcategoria && (
-                  <li style={{ color: '#d1d5db', fontSize: '0.95rem' }}>
+                  <li>
                     • <strong>Subcategoría:</strong> {producto.subcategoria.replace(/-/g, " ")}
                   </li>
                 )}
                 {producto.destacado && (
-                  <li style={{ color: '#fbbf24', fontSize: '0.95rem' }}>
+                  <li className="featured">
                     • <strong>⭐ Producto Destacado</strong>
                   </li>
                 )}
@@ -200,48 +137,18 @@ export default function ProductoPage() {
             </div>
 
             {/* Botones de Acción */}
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '12px',
-              marginTop: '24px'
-            }}>
+            <div className="product-actions">
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textDecoration: 'none' }}
+                className="product-action-button"
               >
-                <button style={{
-                  width: '100%',
-                  backgroundColor: 'white',
-                  color: 'black',
-                  padding: '12px 32px',
-                  fontSize: '1.125rem',
-                  fontWeight: 'bold',
-                  border: 'none',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#f3f4f6'
-                  e.currentTarget.style.transform = 'scale(1.02)'
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = 'white'
-                  e.currentTarget.style.transform = 'scale(1)'
-                }}>
-                  Solicitar Cotización
-                </button>
+                Solicitar Cotización
               </a>
             </div>
           </motion.div>
         </div>
-
-        {/* Productos Relacionados (para después) */}
-        {/* <RelatedProducts categoria={producto.categoria} currentSlug={producto.slug} /> */}
       </div>
     </main>
   )

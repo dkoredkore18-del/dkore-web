@@ -1,0 +1,576 @@
+/* ============================================
+   RESPONSIVE DESIGN SYSTEM - D'KORE
+   Mobile-first approach with consistent breakpoints
+   ============================================ */
+
+/* BREAKPOINTS */
+/* Mobile: 0px - 767px */
+/* Tablet: 768px - 1023px */
+/* Desktop: 1024px+ */
+
+/* ============================================
+   PRODUCT PAGE LAYOUT
+   ============================================ */
+
+.product-page-container {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.product-page-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.product-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+@media (min-width: 768px) {
+  .product-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+}
+
+/* ============================================
+   GALLERY STYLES
+   ============================================ */
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.gallery-main-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-main-image {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-main-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: background 0.3s;
+  z-index: 10;
+}
+
+.gallery-nav-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-nav-button.prev {
+  left: 16px;
+}
+
+.gallery-nav-button.next {
+  right: 16px;
+}
+
+@media (max-width: 767px) {
+  .gallery-nav-button {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}
+
+.gallery-progress {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+  .gallery-thumbnails {
+    flex-direction: column;
+    overflow-x: visible;
+    min-width: 100px;
+    gap: 16px;
+  }
+}
+
+.gallery-thumbnail {
+  cursor: pointer;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.gallery-thumbnail.active {
+  border-color: black;
+  transform: scale(1.1);
+}
+
+.gallery-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ============================================
+   PRODUCT INFO SECTION
+   ============================================ */
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-title {
+  font-size: clamp(1.875rem, 5vw, 2.5rem);
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.product-category {
+  font-size: 0.875rem;
+  color: #d1d5db;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.product-description-short {
+  font-size: 1rem;
+  color: #e5e7eb;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.product-description-long {
+  margin-bottom: 24px;
+}
+
+.product-description-long p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.product-specs {
+  border-top: 1px solid #374151;
+  padding-top: 24px;
+  margin-bottom: 24px;
+}
+
+.product-specs h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.product-specs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-specs li {
+  color: #d1d5db;
+  font-size: 0.95rem;
+}
+
+.product-specs li.featured {
+  color: #fbbf24;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.product-action-button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 12px 32px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.product-action-button:hover {
+  background-color: #f3f4f6;
+  transform: scale(1.02);
+}
+
+/* ============================================
+   BREADCRUMBS
+   ============================================ */
+
+.breadcrumbs {
+  margin-bottom: 32px;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.breadcrumbs a {
+  color: #9ca3af;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.breadcrumbs a:hover {
+  color: white;
+}
+
+.breadcrumbs span {
+  margin: 0 8px;
+}
+
+.breadcrumbs .current {
+  color: white;
+  text-transform: capitalize;
+}
+
+/* ============================================
+   CONTACT PAGE LAYOUT
+   ============================================ */
+
+.contact-page-container {
+  min-height: 100vh;
+  background-color: black;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-page-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .contact-page-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: white;
+}
+
+.contact-header-accent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.contact-header-accent-bar {
+  width: 8px;
+  height: 48px;
+  background-color: #e5e7eb;
+}
+
+.contact-header-subtitle {
+  font-size: 1.875rem;
+  font-weight: 300;
+  color: white;
+}
+
+.contact-header-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.contact-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-description p {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.contact-social-links {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.contact-social-link {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact-social-link:hover {
+  color: #e5e7eb;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contact-form-wrapper {
+  border: 1.5px solid white;
+  padding: 40px;
+  background-color: black;
+}
+
+@media (max-width: 767px) {
+  .contact-form-wrapper {
+    padding: 24px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.contact-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  width: 100%;
+  border: 1px solid #4b5563;
+  padding: 10px;
+  outline: none;
+  background-color: black;
+  color: white;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+.contact-form-input::placeholder,
+.contact-form-textarea::placeholder {
+  color: #9ca3af;
+}
+
+.contact-form-input:focus,
+.contact-form-textarea:focus {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contact-form-textarea {
+  resize: none;
+}
+
+.contact-form-submit-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.contact-form-submit {
+  border: 2px solid white;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s;
+}
+
+.contact-form-submit:hover:not(:disabled) {
+  background-color: white;
+  color: black;
+}
+
+.contact-form-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.contact-success-message {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white;
+}
+
+.contact-success-message h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.contact-success-message button {
+  margin-top: 24px;
+  text-decoration: underline;
+  font-weight: bold;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.container-max-width {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.gap-small {
+  gap: 12px;
+}
+
+.gap-medium {
+  gap: 24px;
+}
+
+.gap-large {
+  gap: 40px;
+}
+
+.gap-xl {
+  gap: 64px;
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .gallery-nav-button,
+  .product-actions {
+    display: none;
+  }
+}
