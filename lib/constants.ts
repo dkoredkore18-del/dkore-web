@@ -1,4 +1,4 @@
-const SUPABASE_BASE = "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore"
+const SUPABASE_BASE = "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/dkore-images"
 
 export const CATEGORIAS = [
   {
