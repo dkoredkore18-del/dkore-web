@@ -94,10 +94,17 @@ export default function ProductGallery({ imagenes, nombre }: Props) {
             key={index}
             className={`gallery-thumbnail ${imagenActiva === index ? 'active' : ''}`}
             onClick={() => handleThumbnailClick(index)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                handleThumbnailClick(index)
+              }
+            }}
           >
             <img
               src={img}
-              alt={`${nombre} - ${index}`}
+              alt={`${nombre} - ${index + 1}`}
             />
           </div>
         ))}
