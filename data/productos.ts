@@ -152,18 +152,18 @@ export const productos: Producto[] = [
     descripcion: "Diseño compacto y moderno en fibra de vidrio.", 
     descripcion_larga: "Maceta Timba Mini en fibra de vidrio de alta calidad. Diseño compacto ideal para plantas pequeñas y decoración de espacios reducidos. Resistente a la intemperie y UV. Acabado moderno que se adapta a cualquier estilo decorativo.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini-blanco.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini-champan.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini-negro.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini1.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini2.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini3.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini4.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini5.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini6.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini7.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini8.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20mini/timba-mini9.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini-blanco.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini-champan.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini-negro.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini3.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini4.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini5.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini6.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini7.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini8.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-mini/timba-mini9.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
@@ -198,9 +198,9 @@ export const productos: Producto[] = [
     descripcion: "Formato amplio ideal para proyectos decorativos.", 
     descripcion_larga: "Maceta Timba Plus en fibra de vidrio. Formato amplio perfecto para plantas grandes y proyectos decorativos de impacto. Estructura robusta y resistente. Ideal para jardines, terrazas y espacios comerciales.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20plus/timba-plus-blanco.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20plus/timba-plus-champan.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timba%20plus/timba-plus-negro.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-plus/timba-plus-blanco.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-plus/timba-plus-champan.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/timbas/timba-plus/timba-plus-negro.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
@@ -213,9 +213,9 @@ export const productos: Producto[] = [
     descripcion: "Estética minimalista con acabado premium.", 
     descripcion_larga: "Maceta Nique Mini en fibra de vidrio. Estética minimalista y elegante con acabado premium. Tamaño compacto para plantas pequeñas. Perfecta para decoración moderna y espacios contemporáneos.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/nique%20mini/nique-mini-blanco.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/nique%20mini/nique-mini-chanpan.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/nique%20mini/nique-mini-negro.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/niques/nique-mini/nique-mini-blanco.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/niques/nique-mini/nique-mini-chanpan.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/niques/nique-mini/nique-mini-negro.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
@@ -228,9 +228,9 @@ export const productos: Producto[] = [
     descripcion: "Diseño versátil para interiores modernos.", 
     descripcion_larga: "Maceta Nique Normal en fibra de vidrio. Diseño versátil y elegante que se adapta a cualquier ambiente moderno. Acabado premium con líneas limpias. Resistente y fácil de mantener.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/nique%20normal/nique-normal-blanco.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/nique%20normal/nique-normal-champan.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/nique%20normal/nique-normal-negro.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/niques/nique-normal/nique-normal-blanco.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/niques/nique-normal/nique-normal-champan.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/niques/nique-normal/nique-normal-negro.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
@@ -243,9 +243,9 @@ export const productos: Producto[] = [
     descripcion: "Presencia imponente y resistencia superior.", 
     descripcion_larga: "Maceta Nique Plus en fibra de vidrio. Tamaño grande con presencia imponente. Resistencia superior y acabado premium. Ideal para plantas grandes y proyectos de decoración de alto impacto.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/nique%20plus/nique-plus-blanco.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/nique%20plus/nique-plus-champane.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/nique%20plus/nique-plus-negro.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/niques/nique-plus/nique-plus-blanco.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/niques/nique-plus/nique-plus-champane.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/niques/nique-plus/nique-plus-negro.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
@@ -258,9 +258,9 @@ export const productos: Producto[] = [
     descripcion: "Diseño geométrico moderno.", 
     descripcion_larga: "Maceta Cristal Mini en fibra de vidrio. Diseño geométrico contemporáneo con líneas definidas. Tamaño compacto para plantas pequeñas. Perfecta para espacios modernos y minimalistas.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristal%20mini/cristal-mini-blanco.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristal%20mini/cristal-mini-champan.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristal%20mini/cristal-mini-negro.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristales/cristal-mini/cristal-mini-blanco.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristales/cristal-mini/cristal-mini-champan.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristales/cristal-mini/cristal-mini-negro.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
@@ -273,9 +273,9 @@ export const productos: Producto[] = [
     descripcion: "Formato amplio con líneas definidas.", 
     descripcion_larga: "Maceta Cristal Plus en fibra de vidrio. Formato amplio con diseño geométrico de líneas definidas. Estructura robusta y resistente. Ideal para plantas grandes y proyectos decorativos de impacto visual.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristal%20plus/cristal-plus-blanco.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristal%20plus/cristal-plus-champan.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristal%20plus/cristal-plus-negro.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristales/cristal-plus/cristal-plus-blanco.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristales/cristal-plus/cristal-plus-champan.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/cristales/cristal-plus/cristal-plus-negro.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
@@ -318,9 +318,9 @@ export const productos: Producto[] = [
     descripcion: "Diseño lineal versátil y funcional.", 
     descripcion_larga: "Maceta Lineal Normal en fibra de vidrio. Diseño lineal que combina funcionalidad y estética moderna. Ideal para crear divisiones decorativas o alineaciones de plantas. Estructura resistente y duradera.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineal%20normal/lineal-blanco.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineal%20normal/lineal-champan.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineal%20normal/lineal-negra.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineales/lineal-normal/lineal-blanco.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineales/lineal-normal/lineal-champan.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineales/lineal-normal/lineal-negra.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
@@ -333,9 +333,9 @@ export const productos: Producto[] = [
     descripcion: "Formato amplio con diseño lineal.", 
     descripcion_larga: "Maceta Lineal Plus en fibra de vidrio. Formato amplio con diseño lineal para proyectos decorativos de gran escala. Estructura robusta y resistente. Perfecta para paisajismo profesional.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineal%20plus/lineal-plus-blanco.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineal%20plus/lineal-plus-champan.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineal%20plus/lineal-plus-negro.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineales/lineal-plus/lineal-plus-blanco.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineales/lineal-plus/lineal-plus-champan.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lineales/lineal-plus/lineal-plus-negro.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
@@ -348,9 +348,9 @@ export const productos: Producto[] = [
     descripcion: "Jardinera compacta para espacios reducidos.", 
     descripcion_larga: "Maceta Jardinera Normal en fibra de vidrio. Diseño compacto ideal para balcones y espacios pequeños. Perfecta para múltiples plantas o flores. Acabado moderno y resistente.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardinera%20normal/jardinera-normal-blanca.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardinera%20normal/jardinera-normal-negra.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardinera%20normal/jardinera-normal-champan.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardineras/jardinera-normal/jardinera-normal-blanca.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardineras/jardinera-normal/jardinera-normal-negra.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardineras/jardinera-normal/jardinera-normal-champan.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
@@ -363,19 +363,184 @@ export const productos: Producto[] = [
     descripcion: "Jardinera amplia para proyectos decorativos.", 
     descripcion_larga: "Maceta Jardinera Plus en fibra de vidrio. Formato amplio ideal para crear composiciones florales de impacto. Estructura robusta y resistente. Perfecta para terrazas y jardines.",
     imagenes: [
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardinera%20plus/jardinera-plus-blanco.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardinera%20plus/jardinera-plus-champan.png",
-      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardinera%20plus/jardinera-plus-negro.png"
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardineras/jardinera-plus/jardinera-plus-blanco.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardineras/jardinera-plus/jardinera-plus-champan.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/jardineras/jardinera-plus/jardinera-plus-negro.png"
     ], 
     categoria: "macetas-fibra-vidrio",
     aspectRatio: 1.3067,
     imageScale: 1.169
   },
+  { 
+    id: 24, 
+    nombre: "Maceta Armonía Normal", 
+    slug: "maceta-armonia-normal", 
+    descripcion: "Diseño armónico y equilibrado.", 
+    descripcion_larga: "Maceta Armonía Normal en fibra de vidrio. Diseño armónico que transmite equilibrio y serenidad. Tamaño versátil para plantas medianas. Acabado moderno que se adapta a cualquier ambiente.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/armonias/armonia-normal/armonia-normal1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/armonias/armonia-normal/armonia-normal2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/armonias/armonia-normal/armonia-normal3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
+  { 
+    id: 25, 
+    nombre: "Maceta Armonía Plus", 
+    slug: "maceta-armonia-plus", 
+    descripcion: "Formato amplio con diseño armónico.", 
+    descripcion_larga: "Maceta Armonía Plus en fibra de vidrio. Formato amplio con diseño armónico y equilibrado. Estructura robusta para plantas grandes. Ideal para proyectos decorativos de impacto.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/armonias/armonia-plus/armonia-plus1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/armonias/armonia-plus/armonia-plus2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/armonias/armonia-plus/armonia-plus3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
+  { 
+    id: 26, 
+    nombre: "Maceta Esférica M", 
+    slug: "maceta-esferica-m", 
+    descripcion: "Forma esférica moderna tamaño medio.", 
+    descripcion_larga: "Maceta Esférica M en fibra de vidrio. Forma esférica moderna en tamaño medio. Diseño contemporáneo que aporta dinamismo. Perfecta para plantas decorativas.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-m/esferica-m1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-m/esferica-m2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-m/esferica-m3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
+  { 
+    id: 27, 
+    nombre: "Maceta Esférica XS", 
+    slug: "maceta-esferica-xs", 
+    descripcion: "Forma esférica compacta extra pequeña.", 
+    descripcion_larga: "Maceta Esférica XS en fibra de vidrio. Forma esférica compacta en tamaño extra pequeño. Ideal para plantas pequeñas y decoración minimalista. Acabado moderno.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-xs/esferica-xs1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-xs/esferica-xs2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-xs/esferica-xs3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
+  { 
+    id: 28, 
+    nombre: "Maceta Esférica S", 
+    slug: "maceta-esferica-s", 
+    descripcion: "Forma esférica pequeña versátil.", 
+    descripcion_larga: "Maceta Esférica S en fibra de vidrio. Forma esférica pequeña y versátil. Diseño moderno para plantas pequeñas. Perfecta para espacios reducidos.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-s/esferica-s1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-s/esferica-s2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-s/esferica-s3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
+  { 
+    id: 29, 
+    nombre: "Maceta Esférica XL", 
+    slug: "maceta-esferica-xl", 
+    descripcion: "Forma esférica grande impactante.", 
+    descripcion_larga: "Maceta Esférica XL en fibra de vidrio. Forma esférica grande y impactante. Tamaño XL para plantas grandes. Ideal para proyectos decorativos de presencia visual.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-xl/esferica-xl1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-xl/esferica-xl2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-xl/esferica-xl3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
+  { 
+    id: 30, 
+    nombre: "Maceta Esférica L", 
+    slug: "maceta-esferica-l", 
+    descripcion: "Forma esférica grande versátil.", 
+    descripcion_larga: "Maceta Esférica L en fibra de vidrio. Forma esférica grande y versátil. Tamaño L para plantas medianas a grandes. Diseño moderno y sofisticado.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-l/esferica-l1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-l/esferica-l2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/esfericas/esferica-l/esferica-l3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
+  { 
+    id: 31, 
+    nombre: "Maceta Lisa Normal", 
+    slug: "maceta-lisa-normal", 
+    descripcion: "Diseño minimalista y limpio.", 
+    descripcion_larga: "Maceta Lisa Normal en fibra de vidrio. Diseño minimalista y limpio con acabado liso. Tamaño normal versátil. Perfecta para espacios modernos y contemporáneos.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lisas/lisa-normal/lisa-normal1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lisas/lisa-normal/lisa-normal2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lisas/lisa-normal/lisa-normal3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
+  { 
+    id: 32, 
+    nombre: "Maceta Lisa Plus", 
+    slug: "maceta-lisa-plus", 
+    descripcion: "Formato amplio minimalista.", 
+    descripcion_larga: "Maceta Lisa Plus en fibra de vidrio. Formato amplio con diseño minimalista y acabado liso. Estructura robusta para plantas grandes. Ideal para decoración contemporánea.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lisas/lisa-plus/lisa-plus1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lisas/lisa-plus/lisa-plus2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/lisas/lisa-plus/lisa-plus3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
+  { 
+    id: 33, 
+    nombre: "Maceta Totem Normal", 
+    slug: "maceta-totem-normal", 
+    descripcion: "Diseño vertical alargado.", 
+    descripcion_larga: "Maceta Totem Normal en fibra de vidrio. Diseño vertical alargado tipo totem. Tamaño normal para plantas trepadoras. Ideal para crear divisiones decorativas.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/totems/totem-normal/totem-normal1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/totems/totem-normal/totem-normal2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/totems/totem-normal/totem-normal3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
+  { 
+    id: 34, 
+    nombre: "Maceta Totem Plus", 
+    slug: "maceta-totem-plus", 
+    descripcion: "Diseño vertical amplio impactante.", 
+    descripcion_larga: "Maceta Totem Plus en fibra de vidrio. Diseño vertical amplio tipo totem. Tamaño plus para plantas grandes trepadoras. Estructura robusta y presencia visual impactante.",
+    imagenes: [
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/totems/totem-plus/totem-plus1.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/totems/totem-plus/totem-plus2.png",
+      "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/Dkore/macetas/totems/totem-plus/totem-plus3.png"
+    ], 
+    categoria: "macetas-fibra-vidrio",
+    aspectRatio: 1.3067,
+    imageScale: 1.15
+  },
 
   /* REVESTIMIENTOS 3D */
 
   { 
-    id: 24, 
+    id: 35,
     nombre: "Revestimiento 3D Abanico", 
     slug: "revestimiento-abanico", 
     descripcion: "Patrón dinámico con efecto envolvente.", 
@@ -389,7 +554,7 @@ export const productos: Producto[] = [
     imageScale: 1.28
   },
   { 
-    id: 25, 
+    id: 36,
     nombre: "Revestimiento 3D Burbuja", 
     slug: "revestimiento-burbuja", 
     descripcion: "Diseño orgánico moderno.", 
@@ -403,7 +568,7 @@ export const productos: Producto[] = [
     imageScale: 1.0002
   },
   { 
-    id: 26, 
+    id: 37,
     nombre: "Revestimiento 3D Calicanto", 
     slug: "revestimiento-calicanto", 
     descripcion: "Textura natural contemporánea.", 
@@ -417,7 +582,7 @@ export const productos: Producto[] = [
     imageScale: 1
   },
   { 
-    id: 27, 
+    id: 38,
     nombre: "Revestimiento 3D Cristal", 
     slug: "revestimiento-cristal", 
     descripcion: "Relieve elegante y sofisticado.", 
@@ -432,7 +597,7 @@ export const productos: Producto[] = [
     imageScale: 1.009
   },
   { 
-    id: 28, 
+    id: 39,
     nombre: "Revestimiento 3D Elite", 
     slug: "revestimiento-elite", 
     descripcion: "Diseño exclusivo con textura premium.", 
@@ -463,7 +628,7 @@ export const productos: Producto[] = [
     imageScale: 1.1
   },
   { 
-    id: 30, 
+    id: 41,
     nombre: "Revestimiento 3D Ladrillo", 
     slug: "revestimiento-ladrillo", 
     descripcion: "Clásico diseño tipo ladrillo moderno.", 
@@ -477,7 +642,7 @@ export const productos: Producto[] = [
     imageScale: 1.1
   },
   { 
-    id: 31, 
+    id: 42,
     nombre: "Revestimiento 3D Lucca", 
     slug: "revestimiento-lucca", 
     descripcion: "Textura arquitectónica elegante.", 
@@ -494,7 +659,7 @@ export const productos: Producto[] = [
     imageScale: 1
   },
   { 
-    id: 32, 
+    id: 43,
     nombre: "Revestimiento 3D Ola", 
     slug: "revestimiento-ola", 
     descripcion: "Movimiento visual fluido.", 
@@ -538,7 +703,7 @@ export const productos: Producto[] = [
     imageScale: 1.1
   },
   { 
-    id: 35, 
+    id: 46,
     nombre: "Revestimiento 3D Quadrat", 
     slug: "revestimiento-quadrat", 
     descripcion: "Diseño estructurado moderno.", 
@@ -557,7 +722,7 @@ export const productos: Producto[] = [
   /* MUEBLES DE MELAMINA */
 
   { 
-    id: 36, 
+    id: 47,
     nombre: "Closets", 
     slug: "closets", 
     descripcion: "Closets personalizados en melamina de 15mm.", 
@@ -571,7 +736,7 @@ export const productos: Producto[] = [
     imageScale: 1.15
   },
   { 
-    id: 37, 
+    id: 48,
     nombre: "Cocina en Melamina", 
     slug: "cocina-melamina", 
     descripcion: "Diseño funcional y moderno para cocinas.", 
@@ -586,7 +751,7 @@ export const productos: Producto[] = [
     imageScale: 1.11
   },
   { 
-    id: 38, 
+    id: 49,
     nombre: "Walking Closet", 
     slug: "walking-closet", 
     descripcion: "Espacios organizados y elegantes.", 
@@ -615,7 +780,7 @@ export const productos: Producto[] = [
     imageScale: 1.1499
   },
   { 
-    id: 40, 
+    id: 51,
     nombre: "Centro de Entretenimiento", 
     slug: "centro-entretenimiento", 
     descripcion: "Soluciones modernas para sala.", 
@@ -643,7 +808,7 @@ export const productos: Producto[] = [
     imageScale: 1.15
   },
   { 
-    id: 42, 
+    id: 53,
     nombre: "Recibidores", 
     slug: "recibidores", 
     descripcion: "Muebles elegantes para entradas.", 
@@ -657,7 +822,7 @@ export const productos: Producto[] = [
     imageScale: 1.15
   },
   { 
-    id: 43, 
+    id: 54,
     nombre: "Repisas", 
     slug: "repisas", 
     descripcion: "Soluciones flotantes modernas.", 
@@ -671,7 +836,7 @@ export const productos: Producto[] = [
     imageScale: 1.119
   },
   { 
-    id: 44, 
+    id: 55,
     nombre: "Veladores", 
     slug: "veladores", 
     descripcion: "Complemento ideal para dormitorios.", 
@@ -688,7 +853,7 @@ export const productos: Producto[] = [
   /* MATERIAL ELÉCTRICO */
 
   { 
-    id: 45, 
+    id: 56,
     nombre: "Caja de Embutir", 
     slug: "caja-embutir", 
     descripcion: "Base resistente para instalaciones eléctricas.", 
@@ -697,7 +862,7 @@ export const productos: Producto[] = [
     categoria: "material-electrico" 
   },
   { 
-    id: 46, 
+    id: 57,
     nombre: "Conmutador", 
     slug: "conmutador", 
     descripcion: "Control de iluminación desde múltiples puntos.", 
@@ -706,7 +871,7 @@ export const productos: Producto[] = [
     categoria: "material-electrico" 
   },
   { 
-    id: 47, 
+    id: 58,
     nombre: "Interruptor Simple", 
     slug: "interruptor-simple", 
     descripcion: "Diseño moderno y funcional.", 
@@ -715,7 +880,7 @@ export const productos: Producto[] = [
     categoria: "material-electrico" 
   },
   { 
-    id: 48, 
+    id: 59,
     nombre: "Interruptor Doble", 
     slug: "interruptor-doble", 
     descripcion: "Control independiente para dos circuitos.", 
@@ -724,7 +889,7 @@ export const productos: Producto[] = [
     categoria: "material-electrico" 
   },
   { 
-    id: 49, 
+    id: 60,
     nombre: "Interruptor Triple", 
     slug: "interruptor-triple", 
     descripcion: "Mayor versatilidad en iluminación.", 
@@ -733,7 +898,7 @@ export const productos: Producto[] = [
     categoria: "material-electrico" 
   },
   { 
-    id: 50, 
+    id: 61,
     nombre: "Tomacorriente Simple", 
     slug: "tomacorriente-simple", 
     descripcion: "Toma eléctrica segura y resistente.", 
@@ -742,7 +907,7 @@ export const productos: Producto[] = [
     categoria: "material-electrico" 
   },
   { 
-    id: 51, 
+    id: 62,
     nombre: "Timbre", 
     slug: "timbre", 
     descripcion: "Sistema de aviso moderno.", 
@@ -760,7 +925,7 @@ export const productos: Producto[] = [
     categoria: "material-electrico" 
   },
   { 
-    id: 53, 
+    id: 64,
     nombre: "Tomacorriente con Interruptor", 
     slug: "tomacorriente-con-interruptor", 
     descripcion: "Solución integrada práctica y moderna.", 
@@ -769,3 +934,6 @@ export const productos: Producto[] = [
     categoria: "material-electrico" 
   },
 ]
+
+
+
