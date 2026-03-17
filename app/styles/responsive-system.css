@@ -37,7 +37,7 @@
 @media (min-width: 768px) {
   .product-layout {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 64px;
     align-items: start;
   }
@@ -59,7 +59,7 @@
 .gallery-main-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 3 / 4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,6 +68,7 @@
 @media (min-width: 768px) {
   .gallery-main-wrapper {
     max-width: 100%;
+    aspect-ratio: 3 / 4;
   }
 }
 
