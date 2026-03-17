@@ -11,7 +11,7 @@ export const CATEGORIAS = [
     slug: "macetas-fibra-vidrio",
     nombre: "Macetas en Fibra de Vidrio",
     descripcion: "Resistencia y belleza para tus espacios",
-    portada: `${SUPABASE_BASE}/portada-de-catalogos/portada-macetas.png`
+    portada: `${SUPABASE_BASE}/portada-de-catalogos/portada-macetas.png.png`
   },
   {
     slug: "revestimientos-3d",
