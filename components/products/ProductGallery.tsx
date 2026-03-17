@@ -88,7 +88,7 @@ export default function ProductGallery({ imagenes, nombre }: Props) {
         )}
       </div>
 
-      <div className="gallery-thumbnails">
+      <div className="gallery-thumbnails" style={{ maxWidth: 'calc(6 * 70px + 5 * 10px)' }}>
         {imagenes.map((img, index) => (
           <div
             key={index}
