@@ -5,25 +5,25 @@ export const CATEGORIAS = [
     slug: "mesas-piedra-sinterizada",
     nombre: "Mesas en Piedra Sinterizada",
     descripcion: "Elegancia y durabilidad en cada detalle",
-    portada: `${SUPABASE_BASE}/portadas-de-catalogos/portada-mesas-piedra-sinterizada.png`
+    portada: `${SUPABASE_BASE}/portada-de-catalogos/portada-mesas-piedra-sinterizada.png`
   },
   {
     slug: "macetas-fibra-vidrio",
     nombre: "Macetas en Fibra de Vidrio",
     descripcion: "Resistencia y belleza para tus espacios",
-    portada: `${SUPABASE_BASE}/portadas-de-catalogos/portada-macetas.png`
+    portada: `${SUPABASE_BASE}/portada-de-catalogos/portada-macetas.png`
   },
   {
     slug: "revestimientos-3d",
     nombre: "Revestimientos 3D",
     descripcion: "Transforma tus paredes con textura y estilo",
-    portada: `${SUPABASE_BASE}/portadas-de-catalogos/portada-revestimientos3D.png`
+    portada: `${SUPABASE_BASE}/portada-de-catalogos/portada-revestimientos3D.png`
   },
   {
     slug: "muebles-melamina",
     nombre: "Muebles de Melamina",
     descripcion: "Diseño moderno y funcional a medida",
-    portada: `${SUPABASE_BASE}/portadas-de-catalogos/portada-muebles-melamina.png`
+    portada: `${SUPABASE_BASE}/portada-de-catalogos/portada-muebles-melamina.png`
   }
 ] as const
 
