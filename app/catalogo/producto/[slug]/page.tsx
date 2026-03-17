@@ -7,6 +7,7 @@ import ProductGallery from "@/components/products/ProductGallery"
 import Loading from "@/components/ui/Loading"
 import { useProductBySlug } from "@/hooks/useProducts"
 import { CONTACTO } from "@/lib/constants"
+import "./product-responsive.css"
 
 export default function ProductoPage() {
   const params = useParams()
@@ -88,16 +89,7 @@ export default function ProductoPage() {
         </nav>
 
         {/* Layout de 2 Columnas en Desktop, 1 en Móvil */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr',
-          gap: '64px',
-          alignItems: 'start',
-          marginBottom: '64px',
-          '@media (min-width: 768px)': {
-            gridTemplateColumns: '1.5fr 1fr'
-          }
-        }}>
+        <div className="product-layout">
           {/* COLUMNA IZQUIERDA - GALERÍA (60%) */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}

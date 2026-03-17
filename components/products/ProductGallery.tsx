@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import "@/app/product-responsive.css"
 
 interface Props {
   imagenes: string[]
@@ -46,32 +47,17 @@ export default function ProductGallery({ imagenes, nombre }: Props) {
   }
 
   return (
-    <div style={{ 
-      display: 'flex', 
-      flexDirection: 'column',
-      gap: '24px',
-      '@media (min-width: 768px)': {
-        flexDirection: 'row'
-      }
-    }}>
+    <div className="gallery-container">
 
       {/* Contenedor principal con flechas */}
       <div 
-        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1, order: -1 }}
+        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
 
         {/* Contenedor de imagen con flechas */}
-        <div style={{ 
-          position: 'relative', 
-          width: '100%', 
-          maxWidth: '600px', 
-          aspectRatio: '1',
-          display: 'flex', 
-          alignItems: 'center', 
-          justifyContent: 'center'
-        }}>
+        <div className="gallery-main">
           
           {/* Imagen principal */}
           <div style={{ 
@@ -168,19 +154,7 @@ export default function ProductGallery({ imagenes, nombre }: Props) {
       </div>
 
       {/* Miniaturas - ocultas en móvil, verticales en desktop */}
-      <div style={{ 
-        display: 'none',
-        flexDirection: 'row',
-        gap: '16px', 
-        overflowX: 'auto',
-        paddingBottom: '8px',
-        '@media (min-width: 768px)': {
-          display: 'flex',
-          flexDirection: 'column',
-          overflowX: 'visible',
-          minWidth: '100px'
-        }
-      }}>
+      <div className="gallery-thumbnails">
         {imagenes.map((img, index) => (
           <div
             key={index}
