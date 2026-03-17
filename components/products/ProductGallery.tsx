@@ -167,14 +167,15 @@ export default function ProductGallery({ imagenes, nombre }: Props) {
 
       </div>
 
-      {/* Miniaturas - horizontales en móvil, verticales en desktop */}
+      {/* Miniaturas - ocultas en móvil, verticales en desktop */}
       <div style={{ 
-        display: 'flex', 
+        display: 'none',
         flexDirection: 'row',
         gap: '16px', 
         overflowX: 'auto',
         paddingBottom: '8px',
         '@media (min-width: 768px)': {
+          display: 'flex',
           flexDirection: 'column',
           overflowX: 'visible',
           minWidth: '100px'
