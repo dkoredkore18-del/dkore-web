@@ -59,7 +59,7 @@
 .gallery-main-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 4;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,8 +67,7 @@
 
 @media (min-width: 768px) {
   .gallery-main-wrapper {
-    max-width: 100%;
-    aspect-ratio: 3 / 4;
+    height: 500px;
   }
 }
 
@@ -147,6 +146,7 @@
   scroll-behavior: smooth;
   width: 100%;
   max-width: 100%;
+  height: 120px;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -158,6 +158,7 @@
     gap: 16px;
     width: 100%;
     max-width: 100%;
+    height: 140px;
     padding-bottom: 12px;
     -webkit-overflow-scrolling: touch;
   }
