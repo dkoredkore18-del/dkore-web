@@ -87,7 +87,7 @@ export default function ContactoPage() {
               <FaInstagram />
             </a>
             <a 
-              href="https://wa.me/5930998682900" 
+              href="https://wa.me/5930999215891" 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-social-link"
@@ -102,6 +102,17 @@ export default function ContactoPage() {
             >
               <FaEnvelope />
             </a>
+          </div>
+
+          <div style={{ marginTop: '1.5rem', fontSize: '0.85rem', color: '#9ca3af', lineHeight: '1.8' }}>
+            <p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <FaWhatsapp style={{ color: '#C5A059' }} />
+              <strong style={{ color: '#e5e7eb' }}>Principal:</strong>&nbsp;+593 99 921 5891
+            </p>
+            <p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <FaWhatsapp style={{ color: '#9ca3af' }} />
+              <strong style={{ color: '#e5e7eb' }}>Adicional:</strong>&nbsp;+593 99 868 2900
+            </p>
           </div>
         </div>
 

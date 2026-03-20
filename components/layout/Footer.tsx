@@ -24,6 +24,9 @@ export default function Footer() {
                 <FaMapMarkerAlt /> Cuenca, Ecuador
               </p>
               <p className="flex items-center gap-2">
+                <FaPhone /> +593 99 921 5891
+              </p>
+              <p className="flex items-center gap-2">
                 <FaPhone /> +593 99 868 2900
               </p>
               <p className="flex items-center gap-2">
@@ -129,7 +132,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-400">
-          <p>© 2024 D'kore. Todos los derechos reservados.</p>
+          <p>© 2022 D'kore. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

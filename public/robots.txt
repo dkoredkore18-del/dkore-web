@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /carrito
+
+Sitemap: https://www.dkore.com.ec/sitemap.xml

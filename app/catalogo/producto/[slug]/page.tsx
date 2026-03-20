@@ -5,6 +5,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import ProductGallery from "@/components/products/ProductGallery"
 import Loading from "@/components/ui/Loading"
+import AddToCartButton from "@/components/cart/AddToCartButton"
 import { useProductBySlug } from "@/hooks/useProducts"
 import { CONTACTO } from "@/lib/constants"
 import "@/app/styles/responsive-system.css"
@@ -138,14 +139,7 @@ export default function ProductoPage() {
 
             {/* Botones de Acción */}
             <div className="product-actions">
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="product-action-button"
-              >
-                Solicitar Cotización
-              </a>
+              <AddToCartButton producto={producto} />
             </div>
           </motion.div>
         </div>

@@ -10,6 +10,61 @@ export interface Producto {
   destacado?: boolean
   aspectRatio?: number
   imageScale?: number
+  precio?: number           // precio base en USD
+  precioVariable?: boolean  // true = precio se calcula (muebles, mesas)
+}
+
+// --- CARRITO Y COTIZACIONES ---
+
+export interface ConfiguracionMueble {
+  alto: number
+  profundidad: number
+  ancho: number
+  tipoMelamina: string
+  colorMelamina: string
+}
+
+export interface CartItem {
+  id: string                           // uuid único por item en carrito
+  productoId: number
+  nombre: string
+  slug: string
+  imagen: string
+  categoria: string
+  precio: number                       // precio final calculado
+  precioBase: number                   // precio sin extras
+  cantidad: number
+  color?: string                       // para macetas y revestimientos
+  colorEsEstandar?: boolean            // para calcular recargo macetas
+  configuracion?: ConfiguracionMueble  // para muebles de melamina
+  notaEspecial?: string
+}
+
+export interface ClienteData {
+  nombres: string
+  apellidos: string
+  cedula: string
+  telefono: string
+  direccion: string
+}
+
+export interface QuotationRequest {
+  cliente: ClienteData
+  items: CartItem[]
+  // descuento?: number  // preparado para futuro, oculto por ahora
+}
+
+export interface Quotation {
+  id: string
+  quotationNumber: string
+  cliente: ClienteData
+  items: CartItem[]
+  subtotal: number
+  // descuento?: number  // preparado para futuro, oculto por ahora
+  total: number
+  fechaEmision: string
+  fechaValidez: string   // 15 días desde emisión
+  status: 'pending' | 'sent' | 'viewed'
 }
 
 export interface MensajeContacto {

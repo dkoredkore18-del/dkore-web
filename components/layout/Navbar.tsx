@@ -6,6 +6,7 @@ import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { CATEGORIAS, SUBCATEGORIAS_MELAMINA } from "@/lib/constants"
 import { useProducts } from "@/hooks/useProducts"
+import CartButton from "@/components/cart/CartButton"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -197,7 +198,7 @@ export default function Navbar() {
             </ul>
           )}
 
-          {/* DERECHA - Buscador + Hamburguesa (mobile) */}
+          {/* DERECHA - Buscador + Carrito + Hamburguesa (mobile) */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', position: 'relative', zIndex: 10 }}>
             {/* Buscador */}
             <button
@@ -224,6 +225,9 @@ export default function Navbar() {
                 <path d="m21 21-4.35-4.35"></path>
               </svg>
             </button>
+
+            {/* Carrito */}
+            <CartButton />
 
             {/* Hamburguesa - Solo Mobile */}
             {!isDesktop && (
