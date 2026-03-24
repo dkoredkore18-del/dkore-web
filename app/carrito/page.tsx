@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import React, { useState, useRef } from 'react'
 import { useCart } from '@/contexts/CartContext'
@@ -75,6 +75,21 @@ export default function CarritoPage() {
       const res = await generarCotizacionPDF(cliente, itemsSeleccionados)
       setResultado(res)
       setPdfUrl(URL.createObjectURL(res.blob))
+
+      // Guardar en Supabase + enviar email al admin
+      fetch('/api/cotizaciones', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          numeroCotizacion: res.numeroCotizacion,
+          fechaEmision: res.fechaEmision,
+          fechaValidez: res.fechaValidez,
+          cliente: cliente,
+          items: itemsSeleccionados.map(function(i) { return { nombre: i.nombre, cantidad: i.cantidad, precio: i.precio || 0 } }),
+          subtotal: res.subtotal,
+          total: res.total,
+        }),
+      }).catch(function(err) { console.error('[API cotizaciones]', err) })
     } catch (err) {
       console.error('Error generando PDF:', err)
     } finally {
