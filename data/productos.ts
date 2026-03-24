@@ -253,10 +253,10 @@ export const productos: Producto[] = [
   },
   { 
     id: 16, 
-    nombre: "Maceta Cristal Mini", 
-    slug: "maceta-cristal-mini", 
+    nombre: "Maceta Cristal Normal", 
+    slug: "maceta-cristal-normal", 
     descripcion: "Diseño geométrico moderno.", 
-    descripcion_larga: "Maceta Cristal Mini en fibra de vidrio. Diseño geométrico contemporáneo con líneas definidas. Tamaño compacto para plantas pequeñas. Perfecta para espacios modernos y minimalistas.",
+    descripcion_larga: "Maceta Cristal Normal en fibra de vidrio. Diseño geométrico contemporáneo con líneas definidas. Tamaño normal para plantas medianas. Perfecta para espacios modernos y minimalistas.",
     imagenes: [
       "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/dkore-images/macetas/cristales/cristal-mini/cristal-mini-blanco.png",
       "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/dkore-images/macetas/cristales/cristal-mini/cristal-mini-champan.png",

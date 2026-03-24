@@ -8,32 +8,31 @@ export const RECARGO_COLOR_ESPECIAL = 0.05 // 5% adicional
 export const PRECIO_REVESTIMIENTO_3D = 30
 
 export const PRECIOS_MACETAS: Record<string, number> = {
-  'maceta-timba-mini': 45,
-  'maceta-timba-normal': 55,
-  'maceta-timba-plus': 75,
-  'maceta-nique-mini': 17,
-  'maceta-nique-normal': 35,
-  'maceta-nique-plus': 45,
-  'maceta-cristal-mini': 45,
-  'maceta-cristal-normal': 35,
+  'maceta-timba-mini': 35,
+  'maceta-timba-normal': 45,
+  'maceta-timba-plus': 70,
+  'maceta-nique-mini': 20,
+  'maceta-nique-normal': 25,
+  'maceta-nique-plus': 35,
+  'maceta-cristal-normal': 35,  // antes: cristal-mini renombrada a normal
   'maceta-cristal-plus': 45,
-  'maceta-diamante': 45,
-  'maceta-geometrica': 80,
-  'maceta-esferica-xs': 50,
-  'maceta-esferica-s': 60,
-  'maceta-esferica-m': 75,
-  'maceta-esferica-l': 95,
+  'maceta-diamante': 41,
+  'maceta-geometrica': 75,
+  'maceta-esferica-xs': 23,
+  'maceta-esferica-s': 50,
+  'maceta-esferica-m': 60,
+  'maceta-esferica-l': 75,
   'maceta-esferica-xl': 145,
-  'maceta-lisa-normal': 60,
-  'maceta-lisa-plus': 75,
-  'maceta-lineal-normal': 50,
-  'maceta-lineal-plus': 75,
+  'maceta-lisa-normal': 45,
+  'maceta-lisa-plus': 70,
+  'maceta-lineal-normal': 40,
+  'maceta-lineal-plus': 60,
   'maceta-armonia-normal': 50,
   'maceta-armonia-plus': 85,
-  'maceta-jardinera-normal': 100,
-  'maceta-jardinera-plus': 120,
-  'maceta-totem-normal': 60,
-  'maceta-totem-plus': 80,
+  'maceta-jardinera-normal': 0,  // pendiente
+  'maceta-jardinera-plus': 0,    // pendiente
+  'maceta-totem-normal': 65,
+  'maceta-totem-plus': 85,
 }
 
 // Precios por metro lineal de muebles de melamina
