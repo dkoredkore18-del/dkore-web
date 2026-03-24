@@ -16,7 +16,13 @@ function generarNumeroCotizacion(): string {
   const y = f.getFullYear().toString().slice(-2)
   const m = String(f.getMonth() + 1).padStart(2, '0')
   const d = String(f.getDate()).padStart(2, '0')
-  return `DK-${y}${m}${d}-${Math.floor(Math.random() * 9000) + 1000}`
+
+  const KEY = 'dkore_cotizacion_seq'
+  const actual = parseInt(localStorage.getItem(KEY) || '999', 10)
+  const siguiente = actual + 1
+  localStorage.setItem(KEY, String(siguiente))
+
+  return `DK-${y}${m}${d}-${siguiente}`
 }
 
 function fechaFormato(date: Date): string {

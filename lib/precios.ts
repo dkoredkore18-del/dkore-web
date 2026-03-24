@@ -14,6 +14,7 @@ export const PRECIOS_MACETAS: Record<string, number> = {
   'maceta-nique-mini': 17,
   'maceta-nique-normal': 35,
   'maceta-nique-plus': 45,
+  'maceta-cristal-mini': 45,
   'maceta-cristal-normal': 35,
   'maceta-cristal-plus': 45,
   'maceta-diamante': 45,
@@ -31,7 +32,7 @@ export const PRECIOS_MACETAS: Record<string, number> = {
   'maceta-armonia-plus': 85,
   'maceta-jardinera-normal': 100,
   'maceta-jardinera-plus': 120,
-  'maceta-totem-normal': 50,
+  'maceta-totem-normal': 60,
   'maceta-totem-plus': 80,
 }
 
