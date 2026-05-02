@@ -5,6 +5,34 @@ import { Resend } from 'resend'
 const resend = new Resend(process.env.RESEND_API_KEY)
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'dkore.dkore.18@gmail.com'
 
+const WA_TOKEN = process.env.META_WA_TOKEN
+const WA_PHONE_ID = process.env.META_WA_PHONE_ID || '1110805728780014'
+const WA_ADMIN_NUMBER = process.env.META_WA_ADMIN_NUMBER || '593999215891' // tu numero sin +
+
+async function enviarWhatsApp(to: string, mensaje: string) {
+  if (!WA_TOKEN) {
+    console.warn('[WhatsApp] META_WA_TOKEN no configurado, saltando')
+    return
+  }
+  const res = await fetch(`https://graph.facebook.com/v19.0/${WA_PHONE_ID}/messages`, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${WA_TOKEN}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      messaging_product: 'whatsapp',
+      to,
+      type: 'text',
+      text: { body: mensaje },
+    }),
+  })
+  const data = await res.json()
+  if (!res.ok) console.error('[WhatsApp error]', JSON.stringify(data))
+  else console.log('[WhatsApp] mensaje enviado a:', to)
+  return data
+}
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json()
@@ -93,6 +121,42 @@ export async function POST(req: NextRequest) {
       else console.log('[Resend] email enviado a:', ADMIN_EMAIL)
     } catch (emailErr) {
       console.error('[Resend exception]', emailErr)
+    }
+
+    // 3. WhatsApp al dueño (notificacion inmediata)
+    try {
+      const itemsTexto = (items || [])
+        .map((i: any) => `- ${i.nombre} x${i.cantidad}${i.precio > 0 ? ` ($${(i.precio * i.cantidad).toFixed(2)})` : ' (a cotizar)'}`)
+        .join('\n')
+
+      const mensajeDueno =
+        `*Nueva cotizacion D'kore*\n` +
+        `N: ${numeroCotizacion}\n\n` +
+        `*Cliente:* ${cliente.nombres} ${cliente.apellidos}\n` +
+        `*Cedula:* ${cliente.cedula}\n` +
+        `*Tel:* ${cliente.telefono}\n` +
+        `*Dir:* ${cliente.direccion}\n\n` +
+        `*Productos:*\n${itemsTexto}\n\n` +
+        `*Total: $${Number(total).toFixed(2)}*\n` +
+        `Valida hasta: ${fechaValidez}`
+
+      await enviarWhatsApp(WA_ADMIN_NUMBER, mensajeDueno)
+    } catch (waErr) {
+      console.error('[WhatsApp dueno exception]', waErr)
+    }
+
+    // 4. WhatsApp al cliente (confirmacion)
+    try {
+      const telefonoCliente = (cliente.telefono || '').replace(/^0/, '593')
+      const mensajeCliente =
+        `Hola ${cliente.nombres}! Soy D'kore.\n\n` +
+        `Recibimos tu cotizacion *${numeroCotizacion}* correctamente.\n` +
+        `En breve nos ponemos en contacto contigo.\n\n` +
+        `Gracias por tu interes!`
+
+      await enviarWhatsApp(telefonoCliente, mensajeCliente)
+    } catch (waClienteErr) {
+      console.error('[WhatsApp cliente exception]', waClienteErr)
     }
 
     return NextResponse.json({ ok: true })
