@@ -140,7 +140,9 @@ export async function POST(req: NextRequest) {
         `*Total: $${Number(total).toFixed(2)}*\n` +
         `Valida hasta: ${fechaValidez}`
 
-      await enviarWhatsApp(WA_ADMIN_NUMBER, mensajeDueno)
+      console.log('[WhatsApp dueno] enviando a:', WA_ADMIN_NUMBER)
+      const resDueno = await enviarWhatsApp(WA_ADMIN_NUMBER, mensajeDueno)
+      console.log('[WhatsApp dueno] respuesta:', JSON.stringify(resDueno))
     } catch (waErr) {
       console.error('[WhatsApp dueno exception]', waErr)
     }
@@ -154,7 +156,9 @@ export async function POST(req: NextRequest) {
         `En breve nos ponemos en contacto contigo.\n\n` +
         `Gracias por tu interes!`
 
-      await enviarWhatsApp(telefonoCliente, mensajeCliente)
+      console.log('[WhatsApp cliente] enviando a:', telefonoCliente)
+      const resCliente = await enviarWhatsApp(telefonoCliente, mensajeCliente)
+      console.log('[WhatsApp cliente] respuesta:', JSON.stringify(resCliente))
     } catch (waClienteErr) {
       console.error('[WhatsApp cliente exception]', waClienteErr)
     }
