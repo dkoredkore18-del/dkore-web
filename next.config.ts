@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "pfvgoumghwtkrinhxgwa.supabase.co",
+        hostname: "ofygrgagyodbmifsozcy.supabase.co",
       },
     ],
     unoptimized: true, // Desactivar optimización de imágenes para desarrollo
