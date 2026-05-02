@@ -8,25 +8,25 @@ export default function Home() {
     {
       titulo: "Mesas en Piedra Sinterizada",
       subtitulo: "Elegancia y durabilidad en cada detalle",
-      imagen: "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/portadas-de-catalogos/portada-mesas-piedra-sinterizada.png",
+      imagen: "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/dkore-images/portada-de-catalogos/portada-mesas-piedra-sinterizada.png",
       categoria: "mesas-piedra-sinterizada"
     },
     {
       titulo: "Muebles de Melamina",
       subtitulo: "Diseño moderno y funcional a medida",
-      imagen: "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/portadas-de-catalogos/portada-muebles-melamina.png",
+      imagen: "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/dkore-images/portada-de-catalogos/portada-muebles-melamina.png",
       categoria: "muebles-melamina"
     },
     {
       titulo: "Revestimientos 3D",
       subtitulo: "Transforma tus paredes con textura y estilo",
-      imagen: "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/portadas-de-catalogos/portada-revestimientos3D.png",
+      imagen: "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/dkore-images/portada-de-catalogos/portada-revestimientos3D.png",
       categoria: "revestimientos-3d"
     },
     {
       titulo: "Macetas en Fibra de Vidrio",
       subtitulo: "Resistencia y belleza para tus espacios",
-      imagen: "https://pfvgoumghwtkrinhxgwa.supabase.co/storage/v1/object/public/productos-imagenes/portadas-de-catalogos/portada-macetas.png",
+      imagen: "https://ofygrgagyodbmifsozcy.supabase.co/storage/v1/object/public/dkore-images/portada-de-catalogos/portada-macetas.png.png",
       categoria: "macetas-fibra-vidrio"
     }
   ]
